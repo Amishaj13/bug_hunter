@@ -1,1 +1,13 @@
 mcp[cli]
+llama-index
+llama-index-embeddings-huggingface
+transformers
+sentence-transformers 
+torch 
+huggingface-hub 
+safetensors 
+onnxruntime 
+optimum 
+langchain 
+sentencepiece 
+accelerate

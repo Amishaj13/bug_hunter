@@ -1,7 +1,10 @@
-# from huggingface_hub import snapshot_download
+try:
+    from llama_index_embeddings_huggingface import HuggingFaceEmbedding
+except ImportError:
+    from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+
 from pathlib import Path
 
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core import StorageContext, load_index_from_storage, Settings
 from llama_index.core.retrievers import VectorIndexRetriever
 
