@@ -1,0 +1,7 @@
+uv.lock
+.venv
+*/__pycache__/
+*.onnx
+*.pt
+*.bin
+server/embedding_model/
