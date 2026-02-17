@@ -1,10 +1,7 @@
-try:
-    from llama_index_embeddings_huggingface import HuggingFaceEmbedding
-except ImportError:
-    from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-
+# from huggingface_hub import snapshot_download
 from pathlib import Path
-
+from huggingface_hub import snapshot_download
+from llama_index.embeddings_huggingface import HuggingFaceEmbedding
 from llama_index.core import StorageContext, load_index_from_storage, Settings
 from llama_index.core.retrievers import VectorIndexRetriever
 
@@ -25,7 +22,7 @@ else:
     print(f"Downloading 'embedding_model'.")
     model_id = "BAAI/bge-base-en-v1.5"
     local_dir = directory_path
-    # snapshot_download(repo_id=model_id, local_dir=local_dir, local_dir_use_symlinks=False)
+    snapshot_download(repo_id=model_id, local_dir=local_dir, local_dir_use_symlinks=False)
 
 
 embed_model = HuggingFaceEmbedding(

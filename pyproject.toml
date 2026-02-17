@@ -1,0 +1,23 @@
+[project]
+name = "bug-hunter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.12.0",
+    "dotenv>=0.9.9",
+    "fastmcp>=2.14.5",
+    "huggingface-hub>=1.4.1",
+    "langchain>=1.2.10",
+    "llama-index==0.14.13",
+    "llama-index-embeddings-huggingface>=0.6.1",
+    "mcp[cli]>=1.26.0",
+    "onnxruntime>=1.24.1",
+    "optimum>=2.1.0",
+    "safetensors>=0.7.0",
+    "sentence-transformers>=5.2.2",
+    "sentencepiece>=0.2.1",
+    "torch>=2.10.0",
+    "transformers>=5.2.0",
+]

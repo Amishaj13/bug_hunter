@@ -21,7 +21,7 @@ class Config:
     MAX_TOKENS = 8192
     
     # MCP Server Configuration
-    MCP_SERVER_URL = os.getenv("MCP_SERVER_URL", "http://localhost:8003")
+    MCP_SERVER_URL = os.getenv("MCP_SERVER_URL", "http://localhost:8003/sse")
     MCP_TIMEOUT = 30
     
     # ChromaDB Configuration
